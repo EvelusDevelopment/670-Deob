@@ -90,7 +90,7 @@ final class ps {
                               int var21;
                               if(((boolean[])((boolean[])((Object[])((Object[])var0[4]))[17]))[11]) {
                                  for(var21 = 0; var20.length > var21; ++var21) {
-                                    eda.a((byte)126, var16, '\uffff' & var20[var21]);
+                                    eda.putShort(var16, '\uffff' & var20[var21]);
                                     ++var13;
                                  }
 

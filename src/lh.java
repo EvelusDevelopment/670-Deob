@@ -258,9 +258,9 @@ final class lh extends lm {
       Object[] var51 = jta.a((byte)-113, this.k, new Object[3]);
       op.putInt(var51, 1297377380);
       op.putInt(var51, 6);
-      eda.a((byte)65, var51, var2 > 1?1:0);
-      eda.a((byte)107, var51, var2);
-      eda.a((byte)104, var51, var3);
+      eda.putShort(var51, var2 > 1?1:0);
+      eda.putShort(var51, var2);
+      eda.putShort(var51, var3);
       ((int[])((int[])var1[1]))[0] = var13;
       int var52 = 0;
       int var53 = 0;

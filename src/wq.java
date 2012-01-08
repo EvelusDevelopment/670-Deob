@@ -88,7 +88,7 @@ final class wq {
                   var22 = ((short[][])((short[][])var2[7]))[var20++];
                   if(var22 != null) {
                      for(var23 = 0; ~var23 > ~var22.length; ++var23) {
-                        eda.a((byte)100, var25, var22[var23] & '\uffff');
+                        eda.putShort(var25, var22[var23] & '\uffff');
                      }
 
                      if(var2 != null && (var2.length == 7 || 23 == var2.length && var2[4].equals(Boolean.valueOf(false)))) {

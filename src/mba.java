@@ -23,23 +23,23 @@ final class mba {
       return ((int[])((int[])var0[1]))[1];
    }
 
-   static final void a(int var0, int var1, Object[] var2) {
+   static final void putTri(Object[] buffer, int value) {
       ++c;
-      byte[] var10000 = (byte[])((byte[])var2[2]);
-      int[] var10001 = (int[])((int[])var2[1]);
-      int var10004 = ((int[])((int[])var2[1]))[0];
-      var10001[0] = ((int[])((int[])var2[1]))[0] + 1;
-      var10000[var10004] = (byte)(var0 >> 16);
-      var10000 = (byte[])((byte[])var2[2]);
-      var10001 = (int[])((int[])var2[1]);
-      var10004 = ((int[])((int[])var2[1]))[0];
-      var10001[0] = ((int[])((int[])var2[1]))[0] + 1;
-      var10000[var10004] = (byte)(var0 >> 8);
-      var10000 = (byte[])((byte[])var2[var1]);
-      var10001 = (int[])((int[])var2[1]);
-      var10004 = ((int[])((int[])var2[1]))[0];
-      var10001[0] = ((int[])((int[])var2[1]))[0] + 1;
-      var10000[var10004] = (byte)var0;
+      byte[] var10000 = (byte[])((byte[])buffer[2]);
+      int[] var10001 = (int[])((int[])buffer[1]);
+      int var10004 = ((int[])((int[])buffer[1]))[0];
+      var10001[0] = ((int[])((int[])buffer[1]))[0] + 1;
+      var10000[var10004] = (byte)(value >> 16);
+      var10000 = (byte[])((byte[])buffer[2]);
+      var10001 = (int[])((int[])buffer[1]);
+      var10004 = ((int[])((int[])buffer[1]))[0];
+      var10001[0] = ((int[])((int[])buffer[1]))[0] + 1;
+      var10000[var10004] = (byte)(value >> 8);
+      var10000 = (byte[])((byte[])buffer[2]);
+      var10001 = (int[])((int[])buffer[1]);
+      var10004 = ((int[])((int[])buffer[1]))[0];
+      var10001[0] = ((int[])((int[])buffer[1]))[0] + 1;
+      var10000[var10004] = (byte)value;
    }
 
    static final void a(int var0) {

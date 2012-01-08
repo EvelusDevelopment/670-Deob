@@ -49,8 +49,8 @@ final class lv extends tha {
          try {
             ((int[])((int[])((Object[])((Object[])var3[3]))[1]))[0] = 0;
             ek.putByte((Object[])((Object[])var3[3]), 6);
-            mba.a(3, 2, (Object[])((Object[])var3[3]));
-            eda.a((byte)72, (Object[])((Object[])var3[3]), 0);
+            mba.putTri((Object[])((Object[])var3[3]), 3);
+            eda.putShort((Object[])((Object[])var3[3]), 0);
             oua.writeBytesToOutputStreamWorker((Object[])((Object[])var3[10]), (byte[])((byte[])((Object[])((Object[])var3[3]))[2]), 0, ((byte[])((byte[])((Object[])((Object[])var3[3]))[2])).length);
          } catch (IOException var14) {
             try {

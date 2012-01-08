@@ -50,7 +50,7 @@ final class mj {
       byte[] var8 = var7.toByteArray();
       if(!var0) {
          ((int[])((int[])var3[1]))[0] = 0;
-         eda.a((byte)84, var3, var8.length);
+         eda.putShort(var3, var8.length);
          lr.a(var8.length, var8, 20244, 0, var3);
       }
    }

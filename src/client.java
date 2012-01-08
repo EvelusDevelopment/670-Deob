@@ -2569,7 +2569,7 @@ public final class client extends gi {
                rw var6;
                Object[] var38;
                for(var38 = null == (var5 = (rw)gm.a((Object[])((Object[])var3[8]), 0))?null:var5.y; null != var38; var38 = null == (var6 = (rw)dka.a((Object[])((Object[])var3[8]), (byte)119))?null:var6.y) {
-                  ((int[])((int[])((Object[])((Object[])var3[3]))[1]))[0] = 0;
+                 ((int[])((int[])((Object[])((Object[])var3[3]))[1]))[0] = 0; //Set position to 0
                   ek.putByte((Object[])((Object[])var3[3]), 1);
                   uk.put40BitInteger((Object[])((Object[])var3[3]), ((tha)(var38 != null?var38[1]:null)).m);
                   oua.writeBytesToOutputStreamWorker((Object[])((Object[])var3[10]), (byte[])((byte[])((Object[])((Object[])var3[3]))[2]), 0, ((byte[])((byte[])((Object[])((Object[])var3[3]))[2])).length);
@@ -3113,16 +3113,16 @@ public final class client extends gi {
 
             if(no.k == 1) {
                dna.a = cq.createSocketWorker(vga.d, 25000);
-               Object[] var4 = hi.newByteBufferWrapper(9);
-               ek.putByte(var4, ((int[])((int[])dfa.UPDATESERVERPACKET[0]))[0]);
-               op.putInt(var4, 670);
-               op.putInt(var4, 1);
-               oua.writeBytesToOutputStreamWorker(dna.a, (byte[])((byte[]) var4[2]), 0, 9);
+               Object[] buffer = hi.newByteBufferWrapper(9);
+               ek.putByte(buffer, ((int[])((int[])dfa.UPDATESERVERPACKET[0]))[0]);
+               op.putInt(buffer, 670);
+               op.putInt(buffer, 1);
+               oua.writeBytesToOutputStreamWorker(dna.a, (byte[])((byte[]) buffer[2]), 0, 9);
                ++no.k;
                ab.c = he.a(-113);
             }
 
-            int var5;
+            int read;
             if(no.k == 2) {
                if(!ke.a(dna.a, -95, 1)) {
                   if(he.a(109) + -ab.c > 30000L) {
@@ -3131,9 +3131,9 @@ public final class client extends gi {
                   }
                } else {
                   byte[] response = new byte[1];
-                  var5 = at.readBytesFromInputStreamWorker(dna.a, response, 0, 1);
+                  read = at.readBytesFromInputStreamWorker(dna.a, response, 0, 1);
                   if(0 != response[0]) {
-                     this.a((byte)125, var5);
+                     this.a((byte)125, read);
                      return;
                   }
                   ++no.k;
@@ -3141,20 +3141,20 @@ public final class client extends gi {
             }
             if(no.k == 3) {
                Object[][] var14 = pp.a(125);
-               var5 = var14.length * 4;
-               if(ke.a(dna.a, -52, var5)) {
-                  Object[] var6 = hi.newByteBufferWrapper(var5);
+               read = var14.length * 4;
+               if(ke.a(dna.a, -52, read)) {
+                  Object[] var6 = hi.newByteBufferWrapper(read);
                   at.readBytesFromInputStreamWorker(dna.a, (byte[])((byte[])var6[2]), 0, ((byte[])((byte[])var6[2])).length);
 
                   for(int var7 = 0; var14.length > var7; ++var7) {
                      pp.a(-82, lr.a(1, var6), var14[var7]);
                   }
 
-                  boolean var15 = fc.b(ipa.d, -3) || sd.a((int)12, ipa.d) || jpa.a(ipa.d, -128);
+                  boolean status = fc.b(ipa.d, -3) || sd.a((int)12, ipa.d) || jpa.a(ipa.d, -128);
                   Object[] var8 = dka.g;
                   Object[] var2 = dna.a;
                   Object var9 = null == dna.a?null:var2[0];
-                  boolean var10 = !var15;
+                  boolean var10 = !status;
                   if(var8 == null) {
                      throw new IllegalStateException();
                   }

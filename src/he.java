@@ -36,7 +36,7 @@ final class he {
    static final void a(int var0, boolean var1, int var2) {
       if(var1) {
          Object[] var3 = ona.a((byte)121, (Object[])((Object[])lba.f[7]), th.e);
-         eda.a((byte)107, (Object[])((Object[])var3[0]), var0);
+         eda.putShort((Object[])((Object[])var3[0]), var0);
          lj.a(var3, 6, lba.f);
       } else {
          tn.a(ek.a, var0, -1, 1);

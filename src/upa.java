@@ -28,7 +28,7 @@ final class upa {
 
                ek.putByte((Object[])((Object[])var8[0]), 0);
                op.putInt((Object[])((Object[])var8[0]), ft.f_i);
-               eda.a((byte)63, (Object[])((Object[])var8[0]), var4[var6]);
+               eda.putShort((Object[])((Object[])var8[0]), var4[var6]);
                ij.a(rw.A, (byte)126, (Object[])((Object[])var8[0]));
                lj.a(var8, 6, lba.f);
                var2 = true;

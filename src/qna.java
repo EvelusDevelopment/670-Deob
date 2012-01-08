@@ -416,9 +416,9 @@ final class qna extends ka {
       int var3;
       if(((boolean[])((boolean[])this.xb[17]))[11]) {
          for(var3 = 0; var3 < this.f_db; ++var3) {
-            eda.a((byte)69, var2, this.Bb[var3]);
-            eda.a((byte)115, var2, this.f_gb[var3]);
-            eda.a((byte)113, var2, this.M[var3]);
+            eda.putShort(var2, this.Bb[var3]);
+            eda.putShort(var2, this.f_gb[var3]);
+            eda.putShort(var2, this.M[var3]);
          }
       } else {
          for(var3 = 0; var3 < this.f_db; ++var3) {

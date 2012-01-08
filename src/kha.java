@@ -90,16 +90,16 @@ final class kha {
 
    static final Object[] a(boolean var0) {
       ++g;
-      Object[] var1 = tia.a(-127);
-      wb.putLong(var1, 0L);
-      bw.a(bm.f, (byte)0, var1);
+      Object[] buffer = tia.createCskBuffer(-127);
+      wb.putLong(buffer, 0L);
+      bw.a(bm.f, (byte)0, buffer);
       if(!var0) {
          return (Object[])null;
       } else {
-         wb.putLong(var1, fw.b);
-         wb.putLong(var1, nca.e);
-         mj.a(false, sd.a, ska.b, var1);
-         return var1;
+         wb.putLong(buffer, fw.b);
+         wb.putLong(buffer, nca.e);
+         mj.a(false, sd.a, ska.b, buffer);
+         return buffer;
       }
    }
 

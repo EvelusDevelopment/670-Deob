@@ -70,11 +70,11 @@ final class qd {
             moa.f = 0;
             wi.d = var2;
             var11 = ona.a((byte)116, (Object[])((Object[])lba.f[7]), fr.d);
-            eda.a((byte)72, (Object[])((Object[])var11[0]), rw.A);
+            eda.putShort((Object[])((Object[])var11[0]), rw.A);
             th.a((Object[])((Object[])var11[0]), lca.d, (byte)-26);
             th.a((Object[])((Object[])var11[0]), rs.f + var5, (byte)-120);
             vh.putIntLE(0, (Object[])((Object[])var11[0]), ft.f_i);
-            eda.a((byte)61, (Object[])((Object[])var11[0]), qm.d + var6);
+            eda.putShort((Object[])((Object[])var11[0]), qm.d + var6);
             if(null != var11 && -3 == ~var11.length && var11[1].equals(Integer.valueOf(1))) {
                id.a(var0 - 4204, ((int[])((int[])((Object[])((Object[])uda.s[0]))[2]))[3], (Object[])null);
             }
@@ -111,7 +111,7 @@ final class qd {
             moa.f = 0;
             var12 = ona.a((byte)122, (Object[])((Object[])lba.f[7]), var11);
             vh.putIntLE(0, (Object[])((Object[])var12[0]), Integer.MAX_VALUE & (int)(var9 >>> 32));
-            eda.a((byte)77, (Object[])((Object[])var12[0]), qm.d + var6);
+            eda.putShort((Object[])((Object[])var12[0]), qm.d + var6);
             oca.a(118, rs.f + var5, (Object[])((Object[])var12[0]));
             rh.a(127, !ue.a((byte)125)?0:1, (Object[])((Object[])var12[0]));
             if(null != var1 && 10 == var1.length && var1[8].equals(Integer.valueOf(1))) {
@@ -162,7 +162,7 @@ final class qd {
                a(4204, (Object[])((Object[])ssa.d[0]), 24, 27);
             }
 
-            eda.a((byte)116, (Object[])((Object[])var13[0]), var6 + qm.d);
+            eda.putShort((Object[])((Object[])var13[0]), var6 + qm.d);
             oca.a(121, var5 + rs.f, (Object[])((Object[])var13[0]));
             hja.a((byte)49, ue.a((byte)125)?1:0, (Object[])((Object[])var13[0]));
             lj.a(var13, 6, lba.f);
@@ -255,7 +255,7 @@ final class qd {
                   ij.a(lca.d, (byte)126, (Object[])((Object[])var15[0]));
                   ek.putByte((Object[])((Object[])var15[0]), ue.a((byte)104)?1:0);
                   op.putInt((Object[])((Object[])var15[0]), ft.f_i);
-                  eda.a((byte)99, (Object[])((Object[])var15[0]), var8);
+                  eda.putShort((Object[])((Object[])var15[0]), var8);
                   if(null != var14 && var14.length == 18) {
                      kta.j = null;
                   }
@@ -346,7 +346,7 @@ final class qd {
                   csa.f = ((int[])((int[])aaa.a[5]))[6];
                }
 
-               eda.a((byte)98, (Object[])((Object[])var15[0]), ((int[])((int[])uta.g[12]))[21]);
+               eda.putShort((Object[])((Object[])var15[0]), ((int[])((int[])uta.g[12]))[21]);
                ij.a(rw.A, (byte)126, (Object[])((Object[])var15[0]));
                lj.a(var15, var0 - 4198, lba.f);
             }
@@ -368,7 +368,7 @@ final class qd {
 
                   var16 = ona.a((byte)125, (Object[])((Object[])lba.f[7]), sja.h);
                   th.a((Object[])((Object[])var16[0]), ((int[])((int[])var15[1]))[13], (byte)-39);
-                  eda.a((byte)100, (Object[])((Object[])var16[0]), ((int[])((int[])var15[1]))[47]);
+                  eda.putShort((Object[])((Object[])var16[0]), ((int[])((int[])var15[1]))[47]);
                   ij.a(rw.A, (byte)127, (Object[])((Object[])var16[0]));
                   ij.a(lca.d, (byte)126, (Object[])((Object[])var16[0]));
                   var17 = (Object[])((Object[])var16[0]);
@@ -426,7 +426,7 @@ final class qd {
 
                   ora.a(ue.a((byte)109)?1:0, (byte)120, (Object[])((Object[])var16[0]));
                   ij.a(rs.f + var5, (byte)126, (Object[])((Object[])var16[0]));
-                  eda.a((byte)119, (Object[])((Object[])var16[0]), var6 + qm.d);
+                  eda.putShort((Object[])((Object[])var16[0]), var6 + qm.d);
                   qs.g = var6;
                   em.c = var5;
                   uh.d = false;
@@ -435,7 +435,7 @@ final class qd {
                   if(1 == var8) {
                      ek.putByte((Object[])((Object[])var16[0]), -1);
                      ek.putByte((Object[])((Object[])var16[0]), -1);
-                     eda.a((byte)112, (Object[])((Object[])var16[0]), (int)sma.h);
+                     eda.putShort((Object[])((Object[])var16[0]), (int)sma.h);
                      ek.putByte((Object[])((Object[])var16[0]), 57);
                      ek.putByte((Object[])((Object[])var16[0]), coa.v);
                      ek.putByte((Object[])((Object[])var16[0]), kma.b);
@@ -445,8 +445,8 @@ final class qd {
                      }
 
                      var17 = (Object[])((Object[])woa.a(5, uta.g)[1]);
-                     eda.a((byte)79, (Object[])((Object[])var16[0]), (int)((float[])((float[])var17[1]))[2]);
-                     eda.a((byte)58, (Object[])((Object[])var16[0]), (int)((float[])((float[])var17[1]))[1]);
+                     eda.putShort((Object[])((Object[])var16[0]), (int)((float[])((float[])var17[1]))[2]);
+                     eda.putShort((Object[])((Object[])var16[0]), (int)((float[])((float[])var17[1]))[1]);
                      ek.putByte((Object[])((Object[])var16[0]), 63);
                   } else {
                      moa.f = 0;
@@ -476,9 +476,9 @@ final class qd {
                   var17 = ona.a((byte)127, (Object[])((Object[])lba.f[7]), kla.a);
                   rh.a(124, !ue.a((byte)127)?0:1, (Object[])((Object[])var17[0]));
                   th.a((Object[])((Object[])var17[0]), rw.A, (byte)-75);
-                  eda.a((byte)68, (Object[])((Object[])var17[0]), lca.d);
+                  eda.putShort((Object[])((Object[])var17[0]), lca.d);
                   op.putInt((Object[])((Object[])var17[0]), ft.f_i);
-                  eda.a((byte)95, (Object[])((Object[])var17[0]), var8);
+                  eda.putShort((Object[])((Object[])var17[0]), var8);
                   lj.a(var17, 6, lba.f);
                   mw.a(dg.a(var0 ^ -4104, var16), -2, true, true, 0, 0, ((int[])((int[])var16[14]))[0], dg.a(var0 - 4304, var16), ((int[])((int[])var16[33]))[0]);
                }
@@ -505,7 +505,7 @@ final class qd {
                   fua.e = var3;
                   var15 = ona.a((byte)126, (Object[])((Object[])lba.f[7]), no.d);
                   ij.a(var6 + qm.d, (byte)126, (Object[])((Object[])var15[0]));
-                  eda.a((byte)76, (Object[])((Object[])var15[0]), rs.f + var5);
+                  eda.putShort((Object[])((Object[])var15[0]), rs.f + var5);
                   lj.a(var15, 6, lba.f);
                }
             }
@@ -519,7 +519,7 @@ final class qd {
                var15 = ona.a((byte)124, (Object[])((Object[])lba.f[7]), wia.a);
                oca.a(-109, lca.d, (Object[])((Object[])var15[0]));
                th.a((Object[])((Object[])var15[0]), var5 + rs.f, (byte)-46);
-               eda.a((byte)82, (Object[])((Object[])var15[0]), rw.A);
+               eda.putShort((Object[])((Object[])var15[0]), rw.A);
                th.a((Object[])((Object[])var15[0]), qm.d + var6, (byte)-71);
                vh.putIntLE(0, (Object[])((Object[])var15[0]), ft.f_i);
                lj.a(var15, 6, lba.f);

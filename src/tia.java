@@ -132,7 +132,7 @@ final class tia {
       ma var4;
       Object[] var6 = null != (var4 = (ma)pm.a((long)var3, (Object[])((Object[])var0[0]), false))?var4.s:null;
       if(var1 > -4) {
-         a(91);
+         createCskBuffer(91);
       }
 
       if(var6 != null) {
@@ -153,23 +153,20 @@ final class tia {
       OpenGL.glNewList(((int[])((int[])var0[0]))[0] + var1, 4864);
    }
 
-   static final Object[] a(int var0) {
+   static final Object[] createCskBuffer(int var0) {
       ++a;
-      Object[] var1 = hi.newByteBufferWrapper(518);
-      if(var1 != null && (9 == var1.length || var1.length == 10 || var1.length == 2 && var1[1].equals(Integer.valueOf(2)))) {
-         ida.a(264);
-      }
+      Object[] buffer = hi.newByteBufferWrapper(518);
       maa.csk = new int[4];
       maa.csk[1] = (int)(Math.random() * 9.9999999E7D);
       maa.csk[3] = (int)(Math.random() * 9.9999999E7D);
       maa.csk[0] = (int)(Math.random() * 9.9999999E7D);
       maa.csk[2] = (int)(9.9999999E7D * Math.random());
-      ek.putByte(var1, 10);
-      op.putInt(var1, maa.csk[0]);
-      op.putInt(var1, maa.csk[1]);
-      op.putInt(var1, maa.csk[2]);
-      op.putInt(var1, maa.csk[3]);
-      return var1;
+      ek.putByte(buffer, 10);
+      op.putInt(buffer, maa.csk[0]);
+      op.putInt(buffer, maa.csk[1]);
+      op.putInt(buffer, maa.csk[2]);
+      op.putInt(buffer, maa.csk[3]);
+      return buffer;
    }
 
    static final int[] a(int var0, Object[] var1, int var2) {

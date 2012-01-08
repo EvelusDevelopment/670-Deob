@@ -73,14 +73,14 @@ final class ema {
       ++d;
       Object[] var2 = gqa.a(119);
       ek.putByte((Object[])((Object[])var2[0]), ((int[])((int[])dfa.m[0]))[0]);
-      eda.a((byte)92, (Object[])((Object[])var2[0]), 0);
+      eda.putShort((Object[])((Object[])var2[0]), 0);
       if(var2 != null && (var2.length == 1 || -6 == ~var2.length)) {
          kt.a(true, -89, (byte)127, -9, ((int[])((int[])pt.b[25]))[0]);
       }
 
       int var3 = ((int[])((int[])((Object[])((Object[])var2[0]))[1]))[0];
-      eda.a((byte)91, (Object[])((Object[])var2[0]), 670);
-      eda.a((byte)85, (Object[])((Object[])var2[0]), 1);
+      eda.putShort((Object[])((Object[])var2[0]), 670);
+      eda.putShort((Object[])((Object[])var2[0]), 1);
       int[] var4 = uw.b(var2, (byte)-107);
       int var5 = ((int[])((int[])((Object[])((Object[])var2[0]))[1]))[0];
       bw.a(var1, (byte)0, (Object[])((Object[])var2[0]));

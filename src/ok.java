@@ -268,7 +268,7 @@ final class ok {
 
                Object[] var2;
                int var3;
-               Object[] var4;
+               Object[] buffer0;
                int var5;
                if(to.a == 17) {
                   if(264 != ww.r) {
@@ -281,7 +281,7 @@ final class ok {
                   var2 = gqa.a(var0 ^ -26);
                   if(sn.g) {
                      ek.putByte((Object[])((Object[])var2[0]), ((int[])((int[])dfa.b[0]))[0]);
-                     eda.a((byte)107, (Object[])((Object[])var2[0]), 0);
+                     eda.putShort((Object[])((Object[])var2[0]), 0);
                      var3 = ((int[])((int[])((Object[])((Object[])var2[0]))[1]))[0];
                      op.putInt((Object[])((Object[])var2[0]), 670);
                      op.putInt((Object[])((Object[])var2[0]), 1);
@@ -289,24 +289,24 @@ final class ok {
                         ek.putByte((Object[])((Object[])var2[0]), 14 != ipa.d?0:1);
                      }
 
-                     var4 = tia.a(-124);
-                     ek.putByte(var4, ce.a);
-                     eda.a((byte)95, var4, (int)(Math.random() * 9.9999999E7D));
-                     ek.putByte(var4, dp.y);
-                     op.putInt(var4, ji.f);
+                     buffer0 = tia.createCskBuffer(-124);
+                     ek.putByte(buffer0, ce.a);
+                     eda.putShort(buffer0, (int)(Math.random() * 9.9999999E7D));
+                     ek.putByte(buffer0, dp.y);
+                     op.putInt(buffer0, ji.f);
 
                      for(var5 = 0; var5 < 6; ++var5) {
-                        op.putInt(var4, (int)(Math.random() * 9.9999999E7D));
+                        op.putInt(buffer0, (int)(Math.random() * 9.9999999E7D));
                      }
 
-                     wb.putLong(var4, nca.e);
-                     ek.putByte(var4, ((int[])((int[])fsa.g[1]))[0]);
-                     ek.putByte(var4, (int)(9.9999999E7D * Math.random()));
-                     mj.a(false, sd.a, ska.b, var4);
-                     lr.a(((int[])((int[])var4[1]))[0], (byte[])((byte[])var4[2]), 20244, 0, (Object[])((Object[])var2[0]));
+                     wb.putLong(buffer0, nca.e);
+                     ek.putByte(buffer0, ((int[])((int[])fsa.g[1]))[0]);
+                     ek.putByte(buffer0, (int)(9.9999999E7D * Math.random()));
+                     mj.a(false, sd.a, ska.b, buffer0);
+                     lr.a(((int[])((int[])buffer0[1]))[0], (byte[])((byte[])buffer0[2]), 20244, 0, (Object[])((Object[])var2[0]));
                      fp.a(var0 ^ 11464, (Object[])((Object[])var2[0]), ((int[])((int[])((Object[])((Object[])var2[0]))[1]))[0] + -var3);
                   } else {
-                     ek.putByte((Object[])((Object[])var2[0]), ((int[])((int[])dfa.u[0]))[0]);
+                     ek.putByte((Object[])((Object[])var2[0]), ((int[])((int[])dfa.LOGINSERVERPACKET[0]))[0]);
                   }
 
                   lj.a(var2, 6, kv.e);
@@ -392,89 +392,84 @@ final class ok {
                }
 
                Object[] var7;
-               Object[] var21;
+               Object[] buffer1;
                int var24;
                if(to.a == 80) {
                   ((int[])((int[])((Object[])((Object[])kv.e[4]))[1]))[0] = 0;
                   ci.a(var0 ^ 24194, kv.e);
                   var2 = gqa.a(var0 ^ -117);
-                  var21 = (Object[])((Object[])var2[0]);
+                  buffer1 = (Object[])((Object[])var2[0]);
                   int var6;
                   if(264 != ww.r) {
                      if(!sn.g) {
-                        var4 = dfa.k;
+                        buffer0 = dfa.LOBBYSERVERPACKET;
                      } else {
-                        var4 = dfa.t;
+                        buffer0 = dfa.t;
                      }
 
-                     ek.putByte(var21, ((int[])((int[])var4[0]))[0]);
-                     if(null != var21 && (37 == var21.length || -9 == ~var21.length)) {
-                        tia.a(-127);
-                     }
-
-                     eda.a((byte)111, var21, 0);
-                     var5 = ((int[])((int[])var21[1]))[0];
-                     var6 = ((int[])((int[])var21[1]))[0];
+                     ek.putByte(buffer1, ((int[])((int[])buffer0[0]))[0]);
+                     eda.putShort(buffer1, 0);
+                     var5 = ((int[])((int[])buffer1[1]))[0];
+                     var6 = ((int[])((int[])buffer1[1]))[0];
                      if(!sn.g) {
-                        op.putInt(var21, 670);
-                        op.putInt(var21, 1);
+                        op.putInt(buffer1, 670);
+                        op.putInt(buffer1, 1);
                         var7 = kha.a(true);
-                        lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), 20244, 0, var21);
-                        var6 = ((int[])((int[])var21[1]))[0];
-                        bw.a(tba.c, (byte)0, var21);
+                        lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), 20244, 0, buffer1);
+                        var6 = ((int[])((int[])buffer1[1]))[0];
+                        bw.a(tba.c, (byte)0, buffer1);
                      }
 
-                     ek.putByte(var21, ((int[])((int[])fsa.g[1]))[0]);
-                     ek.putByte(var21, dp.y);
-                     rea.a(24, var21);
-                     bw.a(rna.d, (byte)0, var21);
-                     op.putInt(var21, ji.f);
-                     op.putInt(var21, poa.g);
-                     bw.a(oqa.c, (byte)0, var21);
-                     rda.a(var21, (byte)56);
-                     mo.a(var0 + 72, ((int[])((int[])var21[1]))[0], maa.csk, var6, var21);
-                     fp.a(-11399, var21, -var5 + ((int[])((int[])var21[1]))[0]);
+                     ek.putByte(buffer1, ((int[])((int[])fsa.g[1]))[0]);
+                     ek.putByte(buffer1, dp.y);
+                     rea.a(24, buffer1);
+                     bw.a(rna.d, (byte)0, buffer1);
+                     op.putInt(buffer1, ji.f);
+                     op.putInt(buffer1, poa.g);
+                     bw.a(oqa.c, (byte)0, buffer1);
+                     rda.a(buffer1, (byte)56);
+                     mo.a(var0 + 72, ((int[])((int[])buffer1[1]))[0], maa.csk, var6, buffer1);
+                     fp.a(-11399, buffer1, -var5 + ((int[])((int[])buffer1[1]))[0]);
                   } else {
                      if(sn.g) {
-                        var4 = dfa.t;
+                        buffer0 = dfa.t;
                      } else {
-                        var4 = dfa.f_l;
+                        buffer0 = dfa.LOGINRESPONSEPACKET;
                      }
-
-                     ek.putByte(var21, ((int[])((int[])var4[0]))[0]);
-                     eda.a((byte)115, var21, 0);
-                     var5 = ((int[])((int[])var21[1]))[0];
-                     var6 = ((int[])((int[])var21[1]))[0];
+                     ek.putByte(buffer1, ((int[])((int[])buffer0[0]))[0]);
+                     eda.putShort(buffer1, 0);
+                     var5 = ((int[])((int[])buffer1[1]))[0];
+                     var6 = ((int[])((int[])buffer1[1]))[0];
                      if(!sn.g) {
-                        op.putInt(var21, 670);
-                        op.putInt(var21, 1);
-                        ek.putByte(var21, ipa.d != 14?0:1);
-                        var6 = ((int[])((int[])var21[1]))[0];
+                        op.putInt(buffer1, 670);
+                        op.putInt(buffer1, 1);
+                        ek.putByte(buffer1, ipa.d != 14 ? 0 : 1);
+                        var6 = ((int[])((int[])buffer1[1]))[0];
                         var7 = kha.a(true);
-                        lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), 20244, 0, var21);
-                        var6 = ((int[])((int[])var21[1]))[0];
-                        bw.a(tba.c, (byte)0, var21);
+                        lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), 20244, 0, buffer1);
+                        var6 = ((int[])((int[])buffer1[1]))[0];
+                        bw.a(tba.c, (byte)0, buffer1);
                      }
 
-                     ek.putByte(var21, afa.b((byte)-85));
-                     eda.a((byte)74, var21, wr.n);
-                     eda.a((byte)81, var21, nma.a);
-                     ek.putByte(var21, kea.b(45, (Object[])((Object[])tu.d[37])));
-                     rea.a(24, var21);
-                     bw.a(rna.d, (byte)0, var21);
-                     op.putInt(var21, ji.f);
+                     ek.putByte(buffer1, afa.b((byte)-85));
+                     eda.putShort(buffer1, wr.n);
+                     eda.putShort(buffer1, nma.a);
+                     ek.putByte(buffer1, kea.b(45, (Object[])((Object[])tu.d[37])));
+                     rea.a(24, buffer1);
+                     bw.a(rna.d, (byte)0, buffer1);
+                     op.putInt(buffer1, ji.f);
                      var7 = db.a(tu.d, (int)112);
-                     ek.putByte(var21, ((int[])((int[])var7[1]))[0]);
-                     lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), var0 + 20323, 0, var21);
+                     ek.putByte(buffer1, ((int[])((int[])var7[1]))[0]);
+                     lr.a(((int[])((int[])var7[1]))[0], (byte[])((byte[])var7[2]), var0 + 20323, 0, buffer1);
                      mr.f = true;
                      Object[] var8 = hi.newByteBufferWrapper(hl.a(mca.g, 59));
                      ula.a(-29661, var8, mca.g);
-                     lr.a(((byte[])((byte[])var8[2])).length, (byte[])((byte[])var8[2]), var0 + 20323, 0, var21);
-                     op.putInt(var21, dca.f_i);
-                     wb.putLong(var21, ih.e);
-                     ek.putByte(var21, ai.c != null?1:0);
+                     lr.a(((byte[])((byte[])var8[2])).length, (byte[])((byte[])var8[2]), var0 + 20323, 0, buffer1);
+                     op.putInt(buffer1, dca.f_i);
+                     wb.putLong(buffer1, ih.e);
+                     ek.putByte(buffer1, ai.c != null?1:0);
                      if(ai.c != null) {
-                        bw.a(ai.c, (byte)0, var21);
+                        bw.a(ai.c, (byte)0, buffer1);
                      }
 
                      if(null != var7 && var7.length == 6) {
@@ -482,14 +477,14 @@ final class ok {
                      }
 
                      boolean var10 = it.c.containsKey("jagtheora");
-                     ek.putByte(var21, !var10?0:1);
-                     ek.putByte(var21, hfa.a?1:0);
-                     ek.putByte(var21, !mu.b?0:1);
-                     op.putInt(var21, poa.g);
-                     bw.a(oqa.c, (byte)0, var21);
-                     rda.a(var21, (byte)56);
-                     mo.a(var0 + 72, ((int[])((int[])var21[1]))[0], maa.csk, var6, var21);
-                     fp.a(-11399, var21, ((int[])((int[])var21[1]))[0] - var5);
+                     ek.putByte(buffer1, !var10?0:1);
+                     ek.putByte(buffer1, hfa.a?1:0);
+                     ek.putByte(buffer1, !mu.b?0:1);
+                     op.putInt(buffer1, poa.g);
+                     bw.a(oqa.c, (byte)0, buffer1);
+                     rda.a(buffer1, (byte)56);
+                     mo.a(var0 + 72, ((int[])((int[])buffer1[1]))[0], maa.csk, var6, buffer1);
+                     fp.a(-11399, buffer1, ((int[])((int[])buffer1[1]))[0] - var5);
                   }
 
                   lj.a(var2, var0 + 85, kv.e);
@@ -573,9 +568,9 @@ final class ok {
                if(111 == to.a) {
                   ci.a(-24269, kv.e);
                   var2 = gqa.a(49);
-                  var21 = (Object[])((Object[])var2[0]);
-                  pa.a(3, (Object[])((Object[])kv.e[7]), var21);
-                  mp.a(var0 - 13743, ((int[])((int[])dfa.f[0]))[0], var21);
+                  buffer1 = (Object[])((Object[])var2[0]);
+                  pa.a(3, (Object[])((Object[])kv.e[7]), buffer1);
+                  mp.a(var0 - 13743, ((int[])((int[])dfa.f[0]))[0], buffer1);
                   lj.a(var2, 6, kv.e);
                   dv.a((byte)64, kv.e);
                   to.a = 93;
@@ -722,11 +717,11 @@ final class ok {
                      Class_d.b = mja.a(var2, -15308);
                      wba.c = fh.a(var2, false) == 1;
                      ida.q = ara.b((byte)61, var2);
-                     var21 = lja.d;
+                     buffer1 = lja.d;
                      boolean var25 = wba.c;
-                     if(!var25 == ((boolean[])((boolean[])var21[5]))[1]) {
-                        ((boolean[])((boolean[])var21[5]))[1] = var25;
-                        jba.a((byte)-108, var21);
+                     if(!var25 == ((boolean[])((boolean[])buffer1[5]))[1]) {
+                        ((boolean[])((boolean[])buffer1[5]))[1] = var25;
+                        jba.a((byte)-108, buffer1);
                      }
 
                      Object[] var23 = cqa.a;
@@ -885,9 +880,9 @@ final class ok {
                   uta.g = null;
 
                   for(var3 = 0; oqa.g > var3; ++var3) {
-                     var4 = qoa.b[var3].k;
-                     if(null != var4) {
-                        ((int[])((int[])var4[12]))[14] = -1;
+                     buffer0 = qoa.b[var3].k;
+                     if(null != buffer0) {
+                        ((int[])((int[])buffer0[12]))[14] = -1;
                      }
                   }
 

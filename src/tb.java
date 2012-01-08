@@ -104,8 +104,8 @@ final class tb {
       ++a;
       Object[] var1 = ona.a((byte)120, (Object[])((Object[])lba.f[7]), db.e);
       ek.putByte((Object[])((Object[])var1[0]), afa.b((byte)-85));
-      eda.a((byte)77, (Object[])((Object[])var1[0]), wr.n);
-      eda.a((byte)74, (Object[])((Object[])var1[0]), nma.a);
+      eda.putShort((Object[])((Object[])var1[0]), wr.n);
+      eda.putShort((Object[])((Object[])var1[0]), nma.a);
       ek.putByte((Object[])((Object[])var1[0]), kea.b(59, (Object[])((Object[])tu.d[37])));
       if(!var0) {
          lj.a(var1, 6, lba.f);

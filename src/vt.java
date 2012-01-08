@@ -85,7 +85,7 @@ final class vt {
       if(!((boolean[])((boolean[])((Object[])((Object[])var2[13]))[17]))[11]) {
          nua.a((Object[])((Object[])var2[11]), 1, var0);
       } else {
-         eda.a((byte)119, (Object[])((Object[])var2[11]), var0);
+         eda.putShort((Object[])((Object[])var2[11]), var0);
       }
 
       ++c;

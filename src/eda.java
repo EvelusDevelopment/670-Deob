@@ -12,22 +12,18 @@ final class eda {
    static Object[] d;
 
 
-   static final void a(byte var0, Object[] var1, int var2) {
+   static final void putShort(Object[] var1, int value) {
       byte[] var10000 = (byte[])((byte[])var1[2]);
       int[] var10001 = (int[])((int[])var1[1]);
       int var10004 = ((int[])((int[])var1[1]))[0];
       var10001[0] = ((int[])((int[])var1[1]))[0] + 1;
-      var10000[var10004] = (byte)(var2 >> 8);
-      if(var0 < 57) {
-         h = (float[])null;
-      }
-
+      var10000[var10004] = (byte)(value >> 8);
       ++a;
       var10000 = (byte[])((byte[])var1[2]);
       var10001 = (int[])((int[])var1[1]);
       var10004 = ((int[])((int[])var1[1]))[0];
       var10001[0] = ((int[])((int[])var1[1]))[0] + 1;
-      var10000[var10004] = (byte)var2;
+      var10000[var10004] = (byte)value;
    }
 
    static final void a(byte var0, byte[] var1) {

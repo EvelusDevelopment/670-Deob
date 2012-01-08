@@ -53,7 +53,7 @@ final class mb {
 
    static final Object[][] a(byte var0) {
       ++f;
-      return var0 != 42?(Object[][])((Object[][])c[8]):new Object[][]{dfa.d, dfa.b, dfa.f, dfa.k, dfa.m, dfa.f_i, dfa.UPDATESERVERPACKET, dfa.o, dfa.u, dfa.q, dfa.t, dfa.f_l};
+      return var0 != 42?(Object[][])((Object[][])c[8]):new Object[][]{dfa.d, dfa.b, dfa.f, dfa.LOBBYSERVERPACKET, dfa.m, dfa.f_i, dfa.UPDATESERVERPACKET, dfa.o, dfa.LOGINSERVERPACKET, dfa.q, dfa.t, dfa.LOGINRESPONSEPACKET};
    }
 
    static final Object[] a(Object[] var0, int var1) {

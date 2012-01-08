@@ -31,7 +31,7 @@ final class uw {
             op.putInt(var2, (int)(Math.random() * 9.9999999E7D));
          }
 
-         eda.a((byte)101, var2, (int)(9.9999999E7D * Math.random()));
+         eda.putShort(var2, (int)(9.9999999E7D * Math.random()));
          mj.a(false, sd.a, ska.b, var2);
          if(var2 != null && 5 == var2.length && var2[4].equals(Integer.valueOf(1))) {
             client.c();

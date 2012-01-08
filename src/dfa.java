@@ -8,10 +8,10 @@ final class dfa {
    static int c;
    static int n;
    static int g;
-   static Object[] u = nb.newPacket(0, 14);
+   static Object[] LOGINSERVERPACKET = nb.newPacket(0, 14);
    static Object[] UPDATESERVERPACKET = nb.newPacket(8, 15);
-   static Object[] f_l = nb.newPacket(-2, 16);
-   static Object[] k = nb.newPacket(-2, 19);
+   static Object[] LOGINRESPONSEPACKET = nb.newPacket(-2, 16);
+   static Object[] LOBBYSERVERPACKET = nb.newPacket(-2, 19);
    static Object[] f_i = nb.newPacket(-2, 22);
    static int r;
    static Object[] o = nb.newPacket(4, 23);

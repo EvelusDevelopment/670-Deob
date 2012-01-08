@@ -23,11 +23,11 @@ final class qv {
          Object[] var2 = hi.newByteBufferWrapper(3 + sga.d * 6);
          int var3 = 1 % ((31 - var0) / 39);
          ek.putByte(var2, 1);
-         eda.a((byte)115, var2, sga.d);
+         eda.putShort(var2, sga.d);
 
          for(int var4 = 0; var4 < hg.f.length; ++var4) {
             if(nt.e[var4]) {
-               eda.a((byte)119, var2, var4);
+               eda.putShort(var2, var4);
                op.putInt(var2, hg.f[var4]);
             }
          }

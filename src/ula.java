@@ -18,10 +18,10 @@ final class ula {
       ek.putByte(var1, ((int[])((int[])var2[1]))[1]);
       ek.putByte(var1, ((int[])((int[])var2[1]))[14]);
       ek.putByte(var1, !((boolean[])((boolean[])var2[0]))[1]?0:1);
-      eda.a((byte)67, var1, ((int[])((int[])var2[1]))[11]);
+      eda.putShort(var1, ((int[])((int[])var2[1]))[11]);
       ek.putByte(var1, ((int[])((int[])var2[1]))[6]);
-      mba.a(((int[])((int[])var2[1]))[5], 2, var1);
-      eda.a((byte)89, var1, ((int[])((int[])var2[1]))[12]);
+      mba.putTri(var1, ((int[])((int[])var2[1]))[5]);
+      eda.putShort(var1, ((int[])((int[])var2[1]))[12]);
       ek.putByte(var1, ((int[])((int[])var2[1]))[2]);
       ek.putByte(var1, ((int[])((int[])var2[1]))[10]);
       ek.putByte(var1, ((int[])((int[])var2[1]))[13]);
@@ -34,7 +34,7 @@ final class ula {
          a = (Object[])null;
       }
 
-      eda.a((byte)62, var1, ((int[])((int[])var2[1]))[8]);
+      eda.putShort(var1, ((int[])((int[])var2[1]))[8]);
    }
 
    static final void a(Object[] var0, boolean var1) {

@@ -84,7 +84,7 @@ final class ld {
                throw new IllegalArgumentException();
             }
 
-            eda.a((byte)108, var1, var6 + '\u8000');
+            eda.putShort(var1, var6 + '\u8000');
          }
 
          if(null != var1 && var1.length == 1) {

@@ -104,7 +104,7 @@ final class aka {
                   if(eb.e != null) {
                      if(0 != ~((int[])((int[])eb.e[1]))[0]) {
                         var56 = ona.a((byte)126, (Object[])((Object[])lba.f[7]), noa.c);
-                        eda.a((byte)82, (Object[])((Object[])var56[0]), ((int[])((int[])eb.e[1]))[0]);
+                        eda.putShort((Object[])((Object[])var56[0]), ((int[])((int[])eb.e[1]))[0]);
                         lj.a(var56, 6, lba.f);
                         eb.e = null;
                         tra.b = 30000L + he.a(54);
@@ -165,12 +165,12 @@ final class aka {
                            if(var19 < 8 && var17 >= -32 && var17 <= 31 && var18 >= -32 && var18 <= 31) {
                               var17 += 32;
                               var18 += 32;
-                              eda.a((byte)76, (Object[])((Object[])var55[0]), (var19 << 12) + (var17 << 6) + var18);
+                              eda.putShort((Object[])((Object[])var55[0]), (var19 << 12) + (var17 << 6) + var18);
                            } else if(32 > var19 && -128 <= var17 && var17 <= 127 && -128 <= var18 && 127 >= var18) {
                               var18 += 128;
                               ek.putByte((Object[])((Object[])var55[0]), var19 + 128);
                               var17 += 128;
-                              eda.a((byte)75, (Object[])((Object[])var55[0]), var18 + (var17 << 8));
+                              eda.putShort((Object[])((Object[])var55[0]), var18 + (var17 << 8));
                            } else if(32 > var19) {
                               ek.putByte((Object[])((Object[])var55[0]), 192 + var19);
                               if(1 != var16 && -1 != var15) {
@@ -179,7 +179,7 @@ final class aka {
                                  op.putInt((Object[])((Object[])var55[0]), Integer.MIN_VALUE);
                               }
                            } else {
-                              eda.a((byte)96, (Object[])((Object[])var55[0]), '\ue000' + var19);
+                              eda.putShort((Object[])((Object[])var55[0]), '\ue000' + var19);
                               if(var16 != 1 && var15 != -1) {
                                  op.putInt((Object[])((Object[])var55[0]), var16 | var15 << 16);
                               } else {
@@ -274,7 +274,7 @@ final class aka {
                         long var66 = vha.a(var14, (byte)78);
                         ar.g = var66;
                         ek.putByte((Object[])((Object[])var55[0]), noa.a(true, var14));
-                        eda.a((byte)78, (Object[])((Object[])var55[0]), (int)var71);
+                        eda.putShort((Object[])((Object[])var55[0]), (int)var71);
                      }
 
                      lj.a(var55, 6, lba.f);

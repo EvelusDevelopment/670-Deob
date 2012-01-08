@@ -99,7 +99,7 @@ final class qfa {
 
                            for(var18 = 0; var17.length > var18; ++var18) {
                               ++var12;
-                              eda.a((byte)116, var13, var17[var18] & '\uffff');
+                              eda.putShort(var13, var17[var18] & '\uffff');
                            }
                         }
                      }

@@ -134,11 +134,11 @@ final class hda {
                      var11 += 3;
                   } else {
                      ++var4;
-                     eda.a((byte)97, var5, '\uffff' & var6[var11++]);
+                     eda.putShort(var5, '\uffff' & var6[var11++]);
                      ++var4;
-                     eda.a((byte)100, var5, var6[var11++] & '\uffff');
+                     eda.putShort(var5, var6[var11++] & '\uffff');
                      ++var4;
-                     eda.a((byte)83, var5, var6[var11++] & '\uffff');
+                     eda.putShort(var5, var6[var11++] & '\uffff');
                   }
                }
 
